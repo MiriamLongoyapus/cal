@@ -32,14 +32,14 @@ class MainActivity : AppCompatActivity() {
     fun addNumbers() {
 
         var tilNumber1= findViewById<EditText>(R.id.tilNumber1)
-        var tilNumber2=findViewById<EditText>(R.id.etNumber2)
+        var etNumber2=findViewById<EditText>(R.id.etNumber2)
         var button = findViewById<Button>(R.id.btnButtonAdd)
         button.setOnClickListener {
             var add = tilNumber1.text.toString().toInt()
-            var add2 = tilNumber2.text.toString().toInt()
-            var output = add + add2
+            var add2 = etNumber2.text.toString().toInt()
+            var textView2 = add + add2
 
-            Toast.makeText(this, "$output" ,Toast.LENGTH_SHORT)
+            Toast.makeText(this, "$textView2" ,Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -50,8 +50,8 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             var sub = Number1.text.toString().toInt()
             var sub2 = Number2.text.toString().toInt()
-            var output = sub - sub2
-            Toast.makeText(this, "$output", Toast.LENGTH_SHORT).show()
+            var textView2  = sub - sub2
+            Toast.makeText(this, "$textView2 ", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -62,10 +62,10 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             var multiply = Number1.text.toString().toInt()
             var multioly2 = Number2.text.toString().toInt()
-            var output = multiply * multiply
-            Toast.makeText(this, "$output", Toast.LENGTH_SHORT).show()
+            var textView2  = multiply * multiply
+            Toast.makeText(this, "$textView2 ", Toast.LENGTH_SHORT).show()
 
-//
+
         }
     }
     fun divideNumbers() {
@@ -75,8 +75,8 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             var modulus = Number1.text.toString().toInt()
             var modulus2 = Number2.text.toString().toInt()
-            var output = modulus / modulus2
-            Toast.makeText(this, "$output", Toast.LENGTH_SHORT).show()
+            var textView2  = modulus / modulus2
+            Toast.makeText(this, "$textView2 ", Toast.LENGTH_SHORT).show()
         }
     }
 
